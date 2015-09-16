@@ -1,0 +1,248 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: Geneva, Arial, Helvetica sans-serif;
+    min-width: 1024px;
+}
+
+#logo{
+    height: 150px;
+    width: 100%;
+    background: #2ecc71;
+    color: #fff;
+    text-align: center;
+}
+
+#logo h1{
+    margin: 0;
+    padding: 30px 40px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#info{
+    visibility: hidden;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    background: #fff;
+    box-shadow: 0 2px 2px #464646;
+}
+
+#info #close{
+    display: block;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#info p{
+    padding: 20px;
+}
+
+main{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#inputs{
+    width: 512px;
+    float: left;
+    padding: 40px 0;
+}
+
+#inputs label{
+    font-size: 40px;
+    font-weight: bold;
+    color: #4c4c4c;
+    margin: 40px 10px;
+    text-shadow: 0 1px 1px #8b8b8f;
+}
+
+input[type=range] {
+    display: inline-block;
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 30px 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+/*-------WEBKIT---------*/
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #fafafa;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 36px;
+    width: 16px;
+    background: #2ecc71;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+    box-shadow: 0 1px 1px #101010;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #fbfbfb;
+}
+
+/*-------MOZILLA-----------*/
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #fafafa;
+    border: none;
+    outline: none;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 36px;
+    width: 16px;
+    background: #2ecc71;
+    cursor: pointer;
+    box-shadow: 0 1px 1px #101010;
+    border-radius: 0;
+    border: none;
+}
+
+/*----------IE------------*/
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #fafafa;
+    border: none;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #2ecc71;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #fbfbfb;
+}
+
+input[type=range]::-ms-thumb {
+    height: 36px;
+    width: 16px;
+    border-radius: 0;
+    background: #2ecc71;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #2ecc71;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #fbfbfb;
+}
+
+
+
+input[type = text]{
+    display: inline-block;
+    float: right;
+    width: 50px;
+    height: 30px;
+    margin: 5px 0 0 0;
+    border: 2px solid #f6f6f6;
+    font-size: 20px;
+    color: #555555;
+}
+
+input[type = button]{
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    background: #2ecc71;
+    box-shadow: 0 2px 2px #222;
+}
+
+input[type = button]:hover{
+    background: #2abc69;
+}
+
+input[type = button]:active{
+    background: #27ae60;
+    box-shadow: 0 1px 1px #222;
+}
+
+#results{
+    width: 512px;
+    float: right;
+    font-size: 18px;
+}
+
+#resultBlocks{
+    display: block;
+    float: right;
+    margin-top: 82px;
+}
+
+.resultBlock{
+    height: 32px;
+    width: 220px;
+    padding-top: 15px;
+    margin-right: -2px;
+    text-align: center;
+    visibility: hidden;
+    border-bottom: 1px solid;
+}
+
+#res1{border-color: #2980b9;}
+#res2{border-color: #2abc69;}
+#res3{border-color: #f1c40f;}
+#res4{border-color: #e67e22;}
+#res5{border-color: #d35400;}
+#res6{border-color: #c0392b;}
+
+table#infoTable{
+    display: block;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table#infoTable th{
+    display: block;
+    height: 40px;
+    width: 260px;
+    background: #95a5a6;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 0 0 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+table#infoTable td{
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid;
+}
+
+table#infoTable td#idx1{border-color: #2980b9}
+table#infoTable td#idx2{border-color: #2abc69}
+table#infoTable td#idx3{border-color: #f1c40f}
+table#infoTable td#idx4{border-color: #e67e22}
+table#infoTable td#idx5{border-color: #d35400}
+table#infoTable td#idx6{border-color: #c0392b}
